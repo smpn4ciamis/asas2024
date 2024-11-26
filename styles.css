@@ -1,0 +1,132 @@
+
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #00796b, #48a999);
+  color: white;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 5px 0 20px;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+}
+
+.schedule {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.day {
+  background: white;
+  border: 2px solid #00796b;
+  border-radius: 8px;
+  padding: 15px;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.day:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.day h3 {
+  text-align: center;
+  color: #00796b;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #00796b;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #48a999;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #00796b;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  .schedule {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .day {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .day {
+    padding: 10px;
+  }
+
+  ul li a {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
