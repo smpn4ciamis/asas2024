@@ -1,97 +1,46 @@
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  animation: fadeIn 1s ease-in;
-}
-
-header {
-  font-size: 2rem;
-  animation: slideDown 1.5s ease-in-out;
-}
-
-marquee {
-  font-size: 1rem;
-  color: yellow;
-}
-.taplink-container {
-  margin-top: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fefefe;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.taplink-container h3 {
-  text-align: center;
-  margin-bottom: 15px;
-  color: #007bff;
-}
-
-.taplink-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-.taplink-button {
-  padding: 15px 20px;
-  width: 80%;
-  max-width: 400px;
-  text-align: center;
-  background-color: #007bff;
-  color: white;
+/* Menambahkan styling untuk button */
+.btn-outline-primary {
   font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: transform 0.3s, background-color 0.3s;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.taplink-button:hover {
-  background-color: #0056b3;
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
   transform: scale(1.05);
 }
 
-.animated-title {
-  font-size: 1.8rem;
-  text-align: center;
-  color: #333;
-  animation: fadeInTitle 2s ease-in-out;
+/* Styling Header */
+header {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 10px;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+header p {
+  font-size: 1.2rem;
 }
 
-@keyframes slideDown {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
+/* Responsif untuk tampilan kecil */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+
+  .btn-outline-primary {
+    font-size: 1rem;
+    padding: 12px;
   }
 }
 
-@keyframes fadeInTitle {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+/* Gaya untuk tombol kembali */
+.btn-primary {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1); /* Memperbesar tombol sedikit saat hover */
+  background-color: #0056b3; /* Ubah warna latar saat hover */
 }
