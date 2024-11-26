@@ -41,11 +41,12 @@ header p {
 }
 
 /* Gaya untuk tombol kembali */
-.btn-primary {
-  transition: transform 0.3s ease, background-color 0.3s ease;
+.btn-outline-primary {
+  border-color: #007bff; /* Biru muda */
+  color: #007bff; 
 }
 
-.btn-primary:hover {
-  transform: scale(1.1); /* Memperbesar tombol sedikit saat hover */
-  background-color: #0056b3; /* Ubah warna latar saat hover */
+.btn-outline-primary:hover {
+  background-color: #4db8ff;
+  color: white;
 }
